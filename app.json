@@ -1,0 +1,9 @@
+{
+  "env": {
+    "DB_CONNECTION": {
+      "description": "A secret key for verifying the integrity of signed cookies.",
+      "generator": "secret",
+      "value": "mongodb+srv://admin:admin@cluster0.lqn68.mongodb.net/foodshopdb?retryWrites=true&w=majority"
+    }
+  }
+}
