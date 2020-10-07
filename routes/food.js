@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const Food = require('../models/Food');
 
-// GETS ALL THE POSTS
+// GETS ALL FOOD
 router.get('/', async (req, res) => {
   try {
     const food = await Food.find();
@@ -12,7 +12,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-//SUBMIT A POST
+//SUBMIT A FOOD
 router.post('/', async (req, res) => {
   const food = new Food({
     title: req.body.title,

@@ -12,6 +12,7 @@ app.use(express.json());
 
 //IMPORT ROUTES
 const foodRoute = require('./routes/food');
+const orderRoute = require('./routes/order');
 
 //CONNECT TO DB
 mongoose.connect(
@@ -24,6 +25,7 @@ mongoose.connect(
 );
 
 app.use('/food', foodRoute);
+app.use('/order', orderRoute);
 
 //LISTENER
 app.listen(port, () => {
